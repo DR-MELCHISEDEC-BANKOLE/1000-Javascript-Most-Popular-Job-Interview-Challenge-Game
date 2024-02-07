@@ -1,0 +1,268 @@
+body {
+  //height: 500vh; /* Set the height to 500% of the viewport height */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds the viewport height */
+  padding: 20px; /* Add padding to the body */
+  //margin: 0; /* Reset margin to zero */
+  margin-top: 500px; /* Set top position to zero */
+}
+
+
+
+/* Reset some default styles */
+body, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+header {
+  display: block;
+  text-align: centre;
+  background-color: #ffcd08;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  position: absolute; /* or absolute */
+  top: -0.5px; /* Move the header up by 0.5px */
+  left: 0;
+  width: 100%;
+  margin-left: -0.5px; /* Add negative margin */
+}
+
+h1 {
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    color: blue;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    font-size: 28px;
+}
+
+header h1 span {
+  color: red;
+}
+
+nav {
+  position: fixed;
+  display: flex; /* Make nav a flex container */
+  flex-wrap: wrap; /* Allow items to wrap */
+  background-color: white;
+  color: blue; /* Text color */
+  width: 100%; /* Set width to 100% */
+  margin: 0; /* Set margin to zero */
+  padding: 0; /* Set padding to zero */
+  left: 0; /* Set left position to zero */
+  right: 0; /* Set right position to zero */
+  top: 0; /* Set top position to zero */
+  // Additional styling for the navigation */
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  transition: margin-top 0.3s ease-out;
+  text-align: centre;
+  box-sizing: border-box;
+  z-index: 1000; /* Set the stacking order */
+}
+
+form button {
+    //padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Optional: Hover effect */
+form button:hover {
+    background-color: #45a049;
+}
+
+
+article {
+    margin-top: 400px; /* Adjust this value as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; /* Add padding to create space between border and content */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.article pre {
+    max-width: 100%; /* Adjust the maximum width of the code block */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+.code-quiz {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333; /* Change the color as needed */
+    background-color: #f9f9f9; /* Change the background color as needed */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    white-space: pre-line; /* Apply line breaks */
+}
+
+nav ul {
+  list-style: none;
+
+}
+
+nav ul li {
+  display: inline-flex;
+  margin-right: 10px;
+  background-color: red;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 7px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+main {
+  padding: 20px;
+}
+
+.textarea-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  transition: margin-top 0.3s ease-out;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 240px;
+  background-color: #ffcd08;
+}
+
+.textarea-container textarea {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    padding: 10px;
+    margin-top: 10px; /* Add margin-top to create space between elements */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.textarea-container textarea:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+.Evaluate-Code {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /*margin-top: 10px;  Add margin-top to create space between elements */
+}
+
+/*
+.textarea-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  transition: margin-top 0.3s ease-out;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-color: #ffcd08;
+}
+
+*/
+
+#countdown-timer {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 5px; /* Adjust the padding as needed */
+    margin: 5px; /* Adjust the margin as needed */
+}
+.textarea-container textarea {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.textarea-container textarea:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+}
+
+
+.Evaluate-Code {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+*/
+.Evaluate-Code:hover {
+    background-color: #45a049;
+}
+
+.Evaluate-Code:active {
+    background-color: #3e8e41;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
