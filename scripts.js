@@ -1,12 +1,10 @@
-
-
 // SECTION: ALERT THE USER WITH INFORMATION
 alert(`1,000 JavaScript Most Popular Job Interview Challenge Game:\nCode author:\nDr. Melchisedec Bankole.\nClick OK to continue to the code challenge.`);
 alert(`JavaScript Most Popular Job Interview Challenge:\n\nThis is the time to annex your coding Super-Power.\nThis might be your long-awaited opportunity to land your first dream job in tech.\nAre you ready? Lets go!\n Click Ok to continue to the challenge.`);
 
 // Execute code when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
- 
+
     // Disable right-click, copy, cut, paste, Ctrl+C, Ctrl+V, and Escape
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -151,19 +149,33 @@ document.addEventListener('keydown', function (e) {
         // Get the article element
     const article = document.querySelector('.article');
 
-    // Add an event listener to the link
-    document.getElementById('revealLink').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        article.classList.toggle('hidden'); // Toggle the 'hidden' class
-    });
 
-        // Add an event listener to the link
+// Add an event listener to the link for the FizzBuzz challenge solutions
+document.getElementById('revealLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    // Toggle the 'hidden' class on the article
+    const article = document.querySelector('.article');
+    if (article) {
+        article.classList.toggle('hidden');
+        // Scroll to the article
+        article.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+// Add an event listener to the link for the JavaScript interview challenge
     document.getElementById('code-quiz').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default link behavior
         article.classList.toggle('hidden'); // Toggle the 'hidden' class
     });
+    
+    // JavaScript for scrolling behavior
+    window.addEventListener('scroll', function() {
+    var nav = document.querySelector('nav');
+    if (window.scrollY > 50) { // Adjust the threshold as needed
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+    });
 });
-
-
-
-
