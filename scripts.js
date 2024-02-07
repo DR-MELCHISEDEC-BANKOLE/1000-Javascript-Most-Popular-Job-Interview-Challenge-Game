@@ -6,7 +6,7 @@ alert(`JavaScript Most Popular Job Interview Challenge:\n\nThis is the time to a
 
 // Execute code when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
-/*   
+ 
     // Disable right-click, copy, cut, paste, Ctrl+C, Ctrl+V, and Escape
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -33,7 +33,6 @@ document.addEventListener('keydown', function (e) {
         e.preventDefault();
     }
 });
-*/
     
     // SECTION: COUNTDOWN TIMER
     let time = 420; // Initial time in seconds
