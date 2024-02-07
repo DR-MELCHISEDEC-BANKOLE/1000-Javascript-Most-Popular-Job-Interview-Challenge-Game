@@ -232,8 +232,9 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 20px;
 }
-*/
+
 .Evaluate-Code:hover {
     background-color: #45a049;
 }
@@ -243,15 +244,18 @@ main {
 }
 
 
+/* Adjust footer positioning */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it take full width */
+  background-color: #333; /* Adjust background color as needed */
+  color: white; /* Adjust text color as needed */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Add padding for spacing */
+  z-index: 1000; /* Ensure it's above other content */
 }
+
 
 /* Media query for mobile phones */
 @media only screen and (max-width: 600px) {
