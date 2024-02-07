@@ -1,9 +1,9 @@
 body {
-  //height: 500vh; /* Set the height to 500% of the viewport height */
+  /*height: 500vh;  Set the height to 500% of the viewport height */
   overflow-y: auto; /* Enable vertical scroll if content exceeds the viewport height */
   padding: 20px; /* Add padding to the body */
-  //margin: 0; /* Reset margin to zero */
-  margin-top: 500px; /* Set top position to zero */
+  /*margin: 0;  Reset margin to zero */
+  /*margin-top: 20px;  Set top position to zero */
 }
 
 
@@ -29,6 +29,7 @@ header {
   left: 0;
   width: 100%;
   margin-left: -0.5px; /* Add negative margin */
+  
 }
 
 h1 {
@@ -88,7 +89,7 @@ form button:hover {
 
 
 article {
-    margin-top: 400px; /* Adjust this value as needed */
+    margin-top: 10px; /* Adjust this value as needed */
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -161,7 +162,7 @@ main {
   text-align: left;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 340px;
+  margin-top: 20px;
   background-color: #ffcd08;
 }
 
@@ -232,7 +233,7 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .Evaluate-Code:hover {
@@ -283,9 +284,27 @@ article {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+  .textarea-container {
+    padding: 10px;
+    margin-top: 330px;
+    /* Add additional properties for smaller screens here */
+  }
+
    .mobile-visible-link {
         display: block; /* Ensure the link is displayed as a block element */
         padding: 10px; /* Add padding to increase clickable area */
         margin-bottom: 10px; /* Add margin for better spacing */
     }
+
+footer {
+  position: fixed; /* Fix the footer at the bottom of the viewport */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Make it take full width */
+  background-color: #333; /* Adjust background color as needed */
+  color: white; /* Adjust text color as needed */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Add padding for spacing */
+  z-index: 1000; /* Ensure it's above other content */
+  font-size: 13px;
+}    
 }
