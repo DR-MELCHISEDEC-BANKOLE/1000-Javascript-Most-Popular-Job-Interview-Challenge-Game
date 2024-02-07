@@ -143,7 +143,7 @@ document.addEventListener('keydown', function (e) {
         return result;
     }
 
-   // Add event listener to the EvaluateCode button
+    // Add event listener to the EvaluateCode button
 document.querySelector('.Evaluate-Code').addEventListener('click', evaluateCode);
 
 // Get the article element
@@ -178,4 +178,5 @@ window.addEventListener('scroll', function() {
   } else {
     nav.classList.remove('scrolled');
   }
+});
 });
