@@ -270,4 +270,18 @@ footer {
   nav.scrolled {
     top: -100px; /* Move the navigation out of view */
   }
+article {
+    margin-top: 500px; /* Adjust this value as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+   .mobile-visible-link {
+        display: block; /* Ensure the link is displayed as a block element */
+        padding: 10px; /* Add padding to increase clickable area */
+        margin-bottom: 10px; /* Add margin for better spacing */
+    }
 }
