@@ -143,39 +143,39 @@ document.addEventListener('keydown', function (e) {
         return result;
     }
 
-    // Add event listener to the EvaluateCode button
-    document.querySelector('.Evaluate-Code').addEventListener('click', evaluateCode);
+   // Add event listener to the EvaluateCode button
+document.querySelector('.Evaluate-Code').addEventListener('click', evaluateCode);
 
-        // Get the article element
-    const article = document.querySelector('.article');
+// Get the article element
+const article = document.querySelector('.article');
 
-
-// Add an event listener to the link for the FizzBuzz challenge solutions
-document.getElementById('revealLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-
-    // Toggle the 'hidden' class on the article
-    const article = document.querySelector('.article');
+// Function to toggle 'hidden' class on article and scroll into view
+function toggleArticleVisibility() {
     if (article) {
         article.classList.toggle('hidden');
         // Scroll to the article
         article.scrollIntoView({ behavior: 'smooth' });
     }
+}
+
+// Add an event listener to the link for the FizzBuzz challenge solutions
+document.getElementById('revealLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    toggleArticleVisibility(); // This is for the solutions link
 });
 
 // Add an event listener to the link for the JavaScript interview challenge
-    document.getElementById('code-quiz').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior
-        article.classList.toggle('hidden'); // Toggle the 'hidden' class
-    });
-    
-    // JavaScript for scrolling behavior
-    window.addEventListener('scroll', function() {
-    var nav = document.querySelector('nav');
-    if (window.scrollY > 50) { // Adjust the threshold as needed
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-    });
+document.getElementById('code-quiz').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    toggleArticleVisibility(); // This is for the challenge link
+});
+
+// JavaScript for scrolling behavior
+window.addEventListener('scroll', function() {
+  const nav = document.querySelector('nav');
+  if (window.scrollY > 50) { // Adjust the threshold as needed
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
 });
