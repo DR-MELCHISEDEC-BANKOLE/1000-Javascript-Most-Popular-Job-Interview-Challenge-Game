@@ -4,6 +4,34 @@ alert(`JavaScript Most Popular Job Interview Challenge:\n\nThis is the time to a
 
 // Execute code when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // SECTION: DISABLE RIGHT-CLICK, COPY, CUT, PASTE, CTRL+C, CTRL+V, AND ESCAPE
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('copy', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('cut', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('paste', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'v' || e.key === 'V')) {
+        e.preventDefault();
+    }
+
+    if (e.key === 'Escape') {
+        e.preventDefault();
+    }
+});
+
+    
     // SECTION: PREVENTING PASSWORD SHARING
     const allowedDevices = ['PC', 'Mobile']; // List of allowed devices
     const allowedIPs = ['192.168.1.1', '10.0.0.1']; // List of allowed IP addresses
