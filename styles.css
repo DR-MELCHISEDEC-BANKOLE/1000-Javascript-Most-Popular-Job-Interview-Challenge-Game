@@ -1,5 +1,5 @@
 body {
-  /*height: 500vh;  Set the height to 500% of the viewport height */
+  /*height: 500vh; Set the height to 500% of the viewport height */
   overflow-y: auto; /* Enable vertical scroll if content exceeds the viewport height */
   padding: 20px; /* Add padding to the body */
   /*margin: 0;  Reset margin to zero */
@@ -307,4 +307,78 @@ footer {
   z-index: 1000; /* Ensure it's above other content */
   font-size: 13px;
 }    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Add styles for larger screens here */
+    body {
+        font-size: 16px;
+        /* Example font size */
+    }
+    /* Additional styles for larger screens */
+    .container {
+        width: 80%;
+        /* Example container width */
+        margin: 0 auto;
+        /* Center the container */
+    }
+    /* You can add more styles as needed */
+      .textarea-container {
+        padding: 10px;
+        margin-top: 330px;
+    /* Add additional properties for smaller screens here */
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* Set font size for extra-large screens */
+    body {
+        font-size: 20px;
+        /* Example font size for extra-large screens */
+    }
+    /* Additional styles for extra-large screens */
+    /* Add more styles as needed */
+      .textarea-container {
+        padding: 10px;
+        margin-top: 330px;
+    /* Add additional properties for smaller screens here */
+  }
+}
+
+/* High-resolution devices, higher than 1440px */
+
+@media only screen and (min-width: 1440px) {
+    /* Set font size for very high-resolution screens */
+    body {
+        font-size: 22px;
+        /* Example font size for high-resolution screens */
+    }
+    /* Additional styles for very high-resolution screens */
+    /* Add more styles as needed */
+
+      .textarea-container {
+        padding: 10px;
+        margin-top: 330px;
+    /* Add additional properties for smaller screens here */
+  }
+}
+
+/* Very high-resolution devices, higher than 1920px */
+
+@media only screen and (min-width: 1920px) {
+    /* Set font size for extremely high-resolution screens */
+    body {
+        font-size: 24px;
+        /* Example font size for very high-resolution screens */
+    }
+    /* Additional styles for extremely high-resolution screens */
+    /* Add more styles as needed */
+      .textarea-container {
+        padding: 10px;
+        margin-top: 330px;
+    /* Add additional properties for smaller screens here */
+  }
 }
