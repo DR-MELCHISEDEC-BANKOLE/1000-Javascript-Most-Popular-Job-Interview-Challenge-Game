@@ -313,7 +313,7 @@ footer {
 @media only screen and (min-width: 992px) {
     /* Add styles for larger screens here */
     body {
-        font-size: 16px;
+        font-size: 18px;
         /* Example font size */
     }
     /* Additional styles for larger screens */
@@ -329,6 +329,14 @@ footer {
         margin-top: 330px;
     /* Add additional properties for smaller screens here */
   }
+  article {
+    margin-top: 500px; /* Adjust this value as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -346,6 +354,15 @@ footer {
         margin-top: 330px;
     /* Add additional properties for smaller screens here */
   }
+
+   article {
+    margin-top: 500px; /* Adjust this value as needed */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 }
 
 /* High-resolution devices, higher than 1440px */
